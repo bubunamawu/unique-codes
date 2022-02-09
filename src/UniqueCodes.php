@@ -228,7 +228,7 @@ class UniqueCodes
 
             $string = $characters[$digit].$string;
 
-            $number = $number / strlen($characters);
+            $number = floor($number / strlen($characters));
         }
 
         return $string;
